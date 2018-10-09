@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=300, initial-scale=1">
+  <!-- //angular material css -->
+  <link rel="stylesheet" href="css/angular-material.min.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <!-- //angular libraries -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-messages.min.js"></script>
+  <script src="js/angular-aria.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <!-- //angular material -->
+  <script src="js/angular-material.min.js"></script>
+
+  <!-- //charts.js -->
+  <script src="js/Chart.bundle.min.js"></script>
+
+  <style>
+    .red {color: Crimson;}
+    .green {color: DarkGreen;}
+  </style>
+
+</head>
+
+<body ng-app="App" style="width:400px">
+  <div ng-controller = "AppControl as actrl">
+
+    <!-- <md-card>
+      <canvas id="myChart" width = "300" height="300"></canvas>
+    </md-card> -->
+
+    <md-card>
+      <md-card-content>
+        {{actrl.data}}
+        <!-- <md-list class="md-dense" flex>
+          <md-list-item class="md-3-line" ng-repeat="(key,value) in actrl.data">
+            <img ng-src="{{value.favicon}}" class="md-avatar" />
+            <div class="md-list-item-text" layout="column" >
+              <h3>{{ key }}</h3>
+              <h4>{{ value.formatted }}</h4>
+              <p ng-class="{green:value.running===true,red:value.running===false}" >{{ value.running }}</p>
+            </div>
+          </md-list-item>
+        </md-list> -->
+      </md-card-content>
+    </md-card>
+
+
+  </div>
+</body>
+  <script src="popup.js"></script>
+</html>
