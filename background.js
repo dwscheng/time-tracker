@@ -23,7 +23,7 @@ function initialize(){
 chrome.tabs.onUpdated.addListener(function(tabId,changeInfo,tab){
   if(changeInfo.status === "complete"){
     console.log('tab updated')
-    //console.log(changeInfo)
+
     //start timer for completed tabs
     KeepTime(tab,'tab','tab update')
   }
