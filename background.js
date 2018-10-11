@@ -11,7 +11,9 @@ var reftime, current
 initialize();
 
 function initialize(){
+  //set reftime to current time
   reftime = new Date()
+  //get currently active tab in window
   chrome.tabs.query({active:true,lastFocusedWindow: true},function(result){
     current = result[0];
   })
